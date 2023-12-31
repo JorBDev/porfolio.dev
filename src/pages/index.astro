@@ -5,12 +5,21 @@ import Badge from "../components/Badge.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Hey, soy JorgeBDev <Badge>Disponible para trabajar</Badge></h1>
-		<h2>
-			+1 año de experiencia como Freelancer. Desarrollador web y
-			escritorio, editor de videos. De Medellin, Colombia 🇨🇴. Especializao
-			en crear aplicaciones únicas.
+	<main class="w-full mx-auto lg:w-[740px] py-44">
+		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+			Hey, soy JorgeBDev <a
+				href="https://www.linkedin.com/in/jorgebdev/"
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center"
+			>
+				<Badge>Disponible para trabajar</Badge>
+			</a>
+		</h1>
+		<h2 class="text-xl opacity-80">
+			Estudiante de por vida 🧑‍🎓. +1 año de experiencia como Freelancer.
+			Desarrollador web y escritorio, editor de videos. De Medellin,
+			Colombia 🇨🇴. Especializado en crear aplicaciones únicas.
 		</h2>
 
 		<ul></ul>
