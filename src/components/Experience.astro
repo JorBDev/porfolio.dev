@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+    {
+        title: "Tienda en linea de cursos",
+        date: "Octubre 2022",
+        description:
+            "Creación de una tienda en linea, con la finalidad de que los usuarios puedan comprar cursos y los administradores puedan gestionar los cursos y los usuarios. La tienda se desarrollo con React, TailwinCSS, MySQL, NodeJS y Express.",
+        // link: "#",
+    },
+    {
+        title: "APP escritorio en Java",
+        date: "Marzo 2023",
+        description:
+            "Aplicación de escritorio para la gestión y de una tienda de lentes, la aplicación se desarrollo con Java, JavaFx y MySQL.",
+    },
+    {
+        title: "APP Web de Barbería",
+        date: "Noviembre 2022",
+        description:
+            "Creación de una aplicación web para una barbería, con la finalidad de agendar citas y mostrar los servicios que se ofrecen. La apliación web se desarrollo con HTML5, CSS, SASS, GULP, MySQL, PHP y JavaScript.",
+    },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {EXPERIENCE.map((experience) => <ExperienceItem {...experience} />)}
+</ol>
