@@ -1,32 +1,64 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import MailIcon from "../icons/Mail.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import SocialPill from "../icons/SocialPill.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="w-full mx-auto lg:w-[740px] py-44">
-		<img
-			class="rounded-full w-12 h-12 mb-4"
-			src="https://www.semana.com/resizer/WptQ_ql9ltRMebaAsl6yvnD-7tQ=/fit-in/1920x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/KVRYJNDM6FGKPGL6WXPO26HFUA.png"
-			alt="jorge"
-		/>
-		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
-			Hey, soy JorgeBDev <a
-				href="https://www.linkedin.com/in/jorgebdev/"
-				target="_blank"
-				rel="noopener"
-				class="flex justify-center items-center"
+<Layout
+	title="Porfolio JorBDev - Desarrollador y Programador Web"
+	description="Contrata a JorBDev para crear tu aplicación web o de escritorio. Desarrollador web y escritorio. Especializao en crear aplicaciones únicas."
+>
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-40">
+			<img
+				class="rounded-full w-12 h-12 mb-4"
+				src="https://www.semana.com/resizer/WptQ_ql9ltRMebaAsl6yvnD-7tQ=/fit-in/1920x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/KVRYJNDM6FGKPGL6WXPO26HFUA.png"
+				alt="jorge"
+			/>
+			<h1
+				class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10"
 			>
-				<Badge>Disponible para trabajar</Badge>
-			</a>
-		</h1>
-		<h2 class="text-xl opacity-80">
-			Estudiante de por vida 🧑‍🎓. +1 año de experiencia como Freelancer.
-			Desarrollador web y escritorio, editor de videos. De Medellin,
-			Colombia 🇨🇴. Especializado en crear aplicaciones únicas.
-		</h2>
+				Hey, soy JorBDev <a
+					href="https://www.linkedin.com/in/jorgebdev/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-2xl text-wrap">
+				<span
+					>Estudiante de por vida 🧑‍🎓. +1 año de experiencia como
+					Freelancer.</span
+				>
+				<span class="text-yellow-200/90"
+					>Desarrollador web y escritorio,</span
+				>
+				editor de videos.
+				<span class="text-blue-200/90">De Medellin, Colombia 🇨🇴.</span>
+				<span class="text-red-200/90"
+					>Especializado en crear aplicaciones únicas.</span
+				>
+			</h2>
 
-		<ul></ul>
+			<nav class="flex gap-x-4 mt-3">
+				<SocialPill href="https://www.linkedin.com/in/jorgebdev/">
+					<LinkedInIcon />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/JorBDev">
+					<GitHubIcon />
+					GitHub
+				</SocialPill>
+				<SocialPill href="https://mail.jorbdevcontact@gmail.com">
+					<MailIcon />
+					jorbdevcontact@gmail.com
+				</SocialPill>
+			</nav>
+		</section>
 	</main>
 </Layout>
